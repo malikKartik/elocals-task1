@@ -1,0 +1,95 @@
+.filters{
+    float: left;
+    position: relative;
+    width: 22%;
+    font-size: smaller;
+}
+
+#all-filters{
+    width: 83%;
+    margin-left: 4%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+#all-filters table{
+    border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+    width: 100%;
+    margin-top: 20px;
+}
+#all-filters table:nth-child(1){
+    margin-top: 0;
+}
+
+td{
+    position: relative;
+    height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 0.8em;
+}
+th{
+    color: rgba(0, 0, 0, 0.785);
+    font-size: 0.95em;
+}
+.filter-head{
+    width: 80%;
+    margin-left: 5%;
+}
+.filter-head span:nth-child(1){
+    font-weight: bold;
+}
+.filter-head span:nth-child(2){
+    font-weight: bold;
+    color: #FF4343;
+    position: absolute;
+    right: 15%;
+}
+
+
+td input {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    z-index: 10;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 15px;
+    width: 15px;
+    border: 0.2px solid rgba(58, 58, 58, 0.671);
+  }
+  td input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  td input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  td .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }

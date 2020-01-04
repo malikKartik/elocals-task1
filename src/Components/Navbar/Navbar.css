@@ -1,0 +1,104 @@
+.navbar{    
+    width: 75%;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.navbar .route{
+    margin-bottom: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30px;
+    font: Regular 20px/24px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 0.64;
+}
+.navbar .path{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: darkcyan;
+    font-size: 0.7em;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.navbar .number{
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(50%,-50%);
+    color: darkcyan;
+    font-size: 0.6em;
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.navbar .location{
+    margin-left: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: darkcyan;
+    font-size: 0.6em;
+    grid-column: 7/ span 2;
+    grid-row: 1;
+}
+
+.navbar .main-nav{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    background: transparent linear-gradient(103deg, #E9F1FE 0%, #C5DAFF 100%) 0% 0% no-repeat padding-box;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 4fr 1fr;
+}
+
+.navbar .main-nav .seller-name{
+    position: absolute;
+    text-align: left;
+    font-size: 22px;
+    font: Medium 32px/87px Roboto;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 0.74;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.main-nav .nav-left{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.main-nav .nav-right{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.main-nav .nav-right img{
+    height: 80%;
+    width: 80%;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.location .icon,.number .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -50%;
+    color: #000000;
+    height: 1.5em;
+}
+.location .icon{
+    left: -15%;
+}
+

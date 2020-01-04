@@ -1,0 +1,21 @@
+.header{
+    position: fixed;
+    width: 75%;
+    height: 50px;
+    margin: 0 auto;
+    top: 0;
+    left: 12.2%;
+    background-color: white;
+    z-index: 100;
+}
+
+.header #logo{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform:translateY(-50%);
+}
+.header #logo img{
+    position: relative;
+    left: 0%;
+}

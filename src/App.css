@@ -1,0 +1,20 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px min(400px,500px) fit-content(300px);
+}
+
+.header{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.navbar{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.body{
+  grid-column: 1;
+  grid-row: 3;
+}

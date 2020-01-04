@@ -1,0 +1,7 @@
+.products{
+    float: left;
+    position: relative;
+    width: 78%;
+    height: 300px;
+    background-color: blue;
+}
