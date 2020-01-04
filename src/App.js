@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import products from './data/products'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Body from './Components/body/body'
 
 class App extends Component {
   state = {
-    
+    products:products
   };
   
-
 
   textChangeHandler = (event) =>{
     
@@ -27,7 +27,7 @@ class App extends Component {
       <div className="App">
         <Header/>
         <Navbar/>
-        <Body/>
+        <Body products = {this.state.products}/>
       </div>
     );
   }

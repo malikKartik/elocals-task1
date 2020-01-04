@@ -7,7 +7,7 @@ const Body = (props)=>{
     return(
         <div className="body">
             <Filters/>
-            <Products/>
+            <Products products={props.products}/>
         </div>
     )
 }
