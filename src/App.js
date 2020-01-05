@@ -4,30 +4,20 @@ import products from './data/products'
 import Header from './Components/Header/Header'
 import Navbar from './Components/Navbar/Navbar'
 import Body from './Components/body/body'
+import Footer from './Components/Footer/Footer'
 
 class App extends Component {
   state = {
     products:products
   };
-  
-
-  textChangeHandler = (event) =>{
-    
-  }
-  
-
-  
   render() {
-    // const chars = this.state.text.split('').map(ch=>{
-    //   return <Char character={ch}></Char>
-    // })
-    
       
     return (
       <div className="App">
         <Header/>
         <Navbar/>
         <Body products = {this.state.products}/>
+        <Footer/>
       </div>
     );
   }
